@@ -1,12 +1,12 @@
 .knapp {
 	display:inline-block;
 	padding: 1em;
-	background-color: bisque;
+	background-color: rgb(244, 214, 178);
 	color: black;
 	text-decoration: none;
 	margin: 1em;
-	border: none;
-	border-radius: 2em;
-	
+	border-radius: none;
+
+
 
 }
