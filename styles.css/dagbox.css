@@ -1,0 +1,28 @@
+.dagbox {
+	display: none;
+	text-align:;
+}
+
+.dagbox:target {
+	display: block;
+
+}
+.dagboxEventholder {
+
+	/**align-items: center;
+	justify-content: center;
+	flex-wrap: wrap;*/
+	text-align: center;
+	padding: 1em;
+	width: 715px;
+
+}
+
+.eventbox {
+	box-sizing: border-box;
+	width: 700px;
+	height: 125px;
+	background-color: aqua;
+	text-align: center;
+	margin: 0.5em;
+}
