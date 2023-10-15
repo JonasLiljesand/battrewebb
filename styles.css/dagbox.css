@@ -1,23 +1,18 @@
 .dagbox {
 	display: none;
-	text-align:;
+	text-align:
 }
-
 .dagbox:target {
 	display: block;
-
 }
 .dagboxEventholder {
-
-	/**align-items: center;
-	justify-content: center;
-	flex-wrap: wrap;*/
 	text-align: center;
 	padding: 1em;
 	width: 715px;
+	grid-row-start: 2;
+	grid-column-start: 2;
 
 }
-
 .eventbox {
 	box-sizing: border-box;
 	width: 700px;
