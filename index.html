@@ -14,7 +14,7 @@
 			<a href="#event1" class="knapp">knapp1</a>
 			<a href="#event2" class="knapp">knapp2</a>
 			<a href="#event3" class="knapp">knapp3</a>
-			<a href="#allaevent" class="knapp">Alla event</a>
+			<a href="#allaevent" class="knapp" onclick="document.querySelector('.gridlayout').classList.add('hide-row')">Alla event</a>
 	</div>
 	<div class="dagboxEventholder">
 		<div class="dagbox" id="event1">
@@ -106,9 +106,15 @@
 					aute irure dolor in</p>
 			</div>
 		</div>
+		<div class="allaeventradiogrid" id="allaevent">
+			<div id="allaevent">
+			<input type="radio"> Boka samtliga event
+			</div>
 	</div>
-	<div class="allaeventradiogrid" id="allaevent">
-		<input type="radio">
+	<div>
+		<form>
+			
+		</form>
 	</div>
 </div>
 </body>
