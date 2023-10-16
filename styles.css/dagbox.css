@@ -1,5 +1,5 @@
-.dagbox {
-	display: none;
+/*.dagbox {
+	display:none;
 	text-align: center:
 }
 /*visar den valda dagen*/
@@ -23,6 +23,7 @@
 	margin: 0.5em;
 }
 
+
 #event2,
 #event3 {
 	display: none;
@@ -30,4 +31,9 @@
 #event2:target,
 #event3:target {
 	display: block;
+}
+
+#event2:checked ~ #event1,
+#event3:checked ~ #event1 {
+	display: none;
 }
