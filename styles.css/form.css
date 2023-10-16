@@ -1,16 +1,29 @@
+/*gridposition för formulär*/
 .formular {
-
+	grid-column-start: 2;
+	grid-column-end: span 2;
+	//**grid-row-start: 3;
+	grid-row-end: span 1;**//
+	text-align: left;
 }
 
 label {
 	display: block;
 }
 .checkbox {
-	
+
 }
+/*layouten för checkboxar i formulär*/
 .formdag {
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
 }
-
+/*Döljer valet av individuella dagar som default*/
+#doldaDagar {
+	display: none;
+}
+/*visar valet av indivulla dagar*/
+#visaFormDag:checked + #doldaDagar {
+	display: block;
+}

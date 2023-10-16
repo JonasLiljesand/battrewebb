@@ -15,10 +15,10 @@
 			<a href="#event1" class="knapp">knapp1</a>
 			<a href="#event2" class="knapp">knapp2</a>
 			<a href="#event3" class="knapp">knapp3</a>
-			<a href="#allaevent" class="knapp" onclick="document.querySelector('.gridlayout').classList.add('hide-row')">Alla event</a>
+			<a href="#allaevent" class="knapp" onclick="document.querySelector('.gridlayout').classList.add('hide-row')">Till anmälan</a>
 	</div>
-<div class="dagboxEventholder">
-	<div class="dagbox" id="event1">
+	<div class="dagboxEventholder">
+		<div class="dagbox" id="event1">
 			<div class="eventbox" >
 				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
 				aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
@@ -37,6 +37,7 @@
 					aute irure dolor in</p>
 			</div>
 		</div>
+	</div>
 	<div class="dagbox" id="event2">
 			<div class="eventbox">
 				<input type="checkbox">
@@ -104,10 +105,8 @@
 					aute irure dolor in</p>
 			</div>
 		</div>
-	</div>
-</div>
-	<div>
-		<form class="formular">
+	<div class="formular">
+		<form>
 			<label for="fNamn">Förnamn</label>
 				<input type="text" id="fNamn" name="förnamn" placeholder="Ditt förnamn"><br>
 			<label for="eNamn">Efternamn</label>
@@ -117,29 +116,37 @@
 			<label for="adress">Adress</label>
 				<input type="text" id="adress" name="adress" placeholder="Din adress"><br>
 			<label for="postkod">Postkod</label>
-				<input type="number" id="postkod" name="postkod" placeholder="Din postkod"><br>
+				<input type="string" id="postkod" name="postkod" placeholder="Din postkod"><br>
 			<label for="stad">Stad</label>
 				<input type="text" id="stad" name="stad" placeholder="Din hemort"><br>
 			<label for="telefon">Telefon</label>
 				<input type="tel" id="telefon" name="telefon" placeholder="Ditt telefonnummer"><br>
 			<div class="formdag">
 				<div>
-				<label for="Dagval">Vilka dagar du vill boka</label><br>
-					<div class="checkbox">
-						<input type="checkbox" id="2010fredag" name="fredag">
-						<label for="2010fredag">Fredagen 20e oktober</label>
+					<input type="radio" name="bokningsRadio" id="visaFormDag">
+					<label for="visaFormDag">Boka individuella dagar</label>
+					<input type="radio" name="bokningsRadio" id="bokaAllt">
+					<label for="bokaAllt">Boka samtliga dagar</label>
+					<div id="doldaDagar">
+						<label for="Dagval">Vilka dagar du vill boka</label><br>
+						<div class="checkbox">
+							<input type="checkbox" id="2010fredag" name="fredag">
+							<label for="2010fredag">Fredagen 20e oktober</label>
+						</div>
+						<div class="checkbox">
+							<input type="checkbox" id="2110lordag" name="lordag">
+							<label for="2110lordag">Lördagen 21e oktober</label>
+						</div>
+						<div class="checkbox">
+							<input type="checkbox" id="2210sondag" name="sondag">
+							<label for="2210sondag">Söndagen 22e oktober</label>
+						</div>
+						<div>
+							<input type="checkbox" id="alladagar" name="alladagar">
+							<label for="alladagar">Hela helgen 20-22e oktober</label>
+						</div>
 					</div>
-				<div class="checkbox">
-				<input type="checkbox" id="2110lordag" name="lordag">
-				<label for="2110lordag">Lördagen 21e oktober</label>
-							</div>
-							<div class="checkbox">
-				<input type="checkbox" id="2210sondag" name="sondag">
-				<label for="2210sondag">Söndagen 22e oktober</label>
-								</div>
-								<div>
-				<input type="checkbox" id="alladagar" name="alladagar">
-				<label for="alladagar">Hela helgen 20-22e oktober</label>
+				</div>
 			</div>
 			<br>
 			<label for="lunch">Önskad lunch</label>
@@ -149,9 +156,10 @@
 					<option value="vegetarisk">vegetarisk</option>
 					<option value="vegan">vegan</option>
 				</select><br>
-			<button> Skicka in</button>
+			<button class="knapp"> Skicka in</button>
 		</form>
 	</div>
+
 </div>
 </div>
 </body>
