@@ -1,0 +1,16 @@
+.formular {
+
+}
+
+label {
+	display: block;
+}
+.checkbox {
+	
+}
+.formdag {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+

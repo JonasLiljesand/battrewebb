@@ -4,6 +4,8 @@
 	background-color: rgb(244, 214, 178);
 	color: black;
 	margin: 0.5em;
+	border-style: outset;
+	border-color: aquamarine;
 }
 
 .knappgrid {

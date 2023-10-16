@@ -7,6 +7,7 @@
 <link rel="stylesheet" href="styles.css/background.css">
 <link rel="stylesheet" href="styles.css/dagbox.css">
 <link rel="stylesheet" href="styles.css/gridlayout.css">
+<link rel="stylesheet" href="styles.css/form.css">
 </head>
 <body class="background">
 <div class="gridlayout">
@@ -16,30 +17,27 @@
 			<a href="#event3" class="knapp">knapp3</a>
 			<a href="#allaevent" class="knapp" onclick="document.querySelector('.gridlayout').classList.add('hide-row')">Alla event</a>
 	</div>
-	<div class="dagboxEventholder">
-		<div class="dagbox" id="event1">
+<div class="dagboxEventholder">
+	<div class="dagbox" id="event1">
 			<div class="eventbox" >
-				<input type="checkbox">
 				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
 				aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
 				aute irure dolor in</p>
 			</div>
 			<div class="eventbox">
-				<input type="checkbox">
 				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
 					aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
 					Duis
 					aute irure dolor in</p>
 			</div>
 			<div class="eventbox">
-				<input type="checkbox">
 				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
 					aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
 					Duis
 					aute irure dolor in</p>
 			</div>
 		</div>
-		<div class="dagbox" id="event2">
+	<div class="dagbox" id="event2">
 			<div class="eventbox">
 				<input type="checkbox">
 				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
@@ -75,7 +73,7 @@
 					aute irure dolor in</p>
 			</div>
 		</div>
-		<div class="dagbox" id="event3">
+	<div class="dagbox" id="event3">
 			<div class="eventbox">
 				<input type="checkbox">
 				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
@@ -106,16 +104,55 @@
 					aute irure dolor in</p>
 			</div>
 		</div>
-		<div class="allaeventradiogrid" id="allaevent">
-			<div id="allaevent">
-			<input type="radio"> Boka samtliga event
-			</div>
 	</div>
+</div>
 	<div>
-		<form>
-			
+		<form class="formular">
+			<label for="fNamn">Förnamn</label>
+				<input type="text" id="fNamn" name="förnamn" placeholder="Ditt förnamn"><br>
+			<label for="eNamn">Efternamn</label>
+				<input type="text" id="eNamn" name="Efternamn" placeholder="Ditt efternamn"><br>
+			<label for="epost">Epostadress</label>
+				<input type="email" id="epost" name="epostadress" placeholder="Din Epostadress"><br>
+			<label for="adress">Adress</label>
+				<input type="text" id="adress" name="adress" placeholder="Din adress"><br>
+			<label for="postkod">Postkod</label>
+				<input type="number" id="postkod" name="postkod" placeholder="Din postkod"><br>
+			<label for="stad">Stad</label>
+				<input type="text" id="stad" name="stad" placeholder="Din hemort"><br>
+			<label for="telefon">Telefon</label>
+				<input type="tel" id="telefon" name="telefon" placeholder="Ditt telefonnummer"><br>
+			<div class="formdag">
+				<div>
+				<label for="Dagval">Vilka dagar du vill boka</label><br>
+					<div class="checkbox">
+						<input type="checkbox" id="2010fredag" name="fredag">
+						<label for="2010fredag">Fredagen 20e oktober</label>
+					</div>
+				<div class="checkbox">
+				<input type="checkbox" id="2110lordag" name="lordag">
+				<label for="2110lordag">Lördagen 21e oktober</label>
+							</div>
+							<div class="checkbox">
+				<input type="checkbox" id="2210sondag" name="sondag">
+				<label for="2210sondag">Söndagen 22e oktober</label>
+								</div>
+								<div>
+				<input type="checkbox" id="alladagar" name="alladagar">
+				<label for="alladagar">Hela helgen 20-22e oktober</label>
+			</div>
+			<br>
+			<label for="lunch">Önskad lunch</label>
+				<select name="lunch" id="lunch">
+					<option value="kott">kött</option>
+					<option value="fisk">Fisk</option>
+					<option value="vegetarisk">vegetarisk</option>
+					<option value="vegan">vegan</option>
+				</select><br>
+			<button> Skicka in</button>
 		</form>
 	</div>
+</div>
 </div>
 </body>
 </html>
