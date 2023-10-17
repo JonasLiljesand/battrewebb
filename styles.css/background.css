@@ -5,3 +5,17 @@
 html {
 	scroll-behavior: smooth;
 }
+.boxxy {
+	border: 3px solid black;
+	border-radius: 4px;
+	padding: 1em 1em 0;
+	background-color: blueviolet;
+
+}
+
+h1 {
+	color:rgb(22, 244, 244);
+	text-shadow:-2px 0 black, 0 1px black;
+	grid-column-start: 2;
+	
+}

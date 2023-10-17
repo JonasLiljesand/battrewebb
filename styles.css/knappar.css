@@ -5,11 +5,13 @@
 	margin: 0.5em;
 	border-style: outset;
 	border-color: aquamarine;
+	border-radius: 4px;
 }
 
 .knappgrid {
 	grid-column-start: 2;
 	grid-column-end: 3;
+	grid-row-start: 2;
 	padding: 1em;
 	display: flex;
 	justify-content: center;
