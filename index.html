@@ -12,12 +12,12 @@
 <body class="background">
 <div class="gridlayout">
 	<h1 id="Titel">
-		titel
+		Bättre Webb
 	</h1>
 	<div class="knappgrid boxxy">
-			<a href="#event1" class="knapp">knapp1</a>
-			<a href="#event2" class="knapp">knapp2</a>
-			<a href="#event3" class="knapp">knapp3</a>
+			<a href="#event1" class="knapp">Fredag</a>
+			<a href="#event2" class="knapp">Lördag</a>
+			<a href="#event3" class="knapp">Söndag</a>
 			<a href="#formular" class="knapp">Till anmälan</a>
 	</div>
 	<div class="dagboxEventholder boxxy">
@@ -145,7 +145,7 @@
 			</div>
 		</div>
 	</div>
-	<div class="formular boxxy" id="formular" style="width: 30%;">
+	<div class="formular boxxy" id="formular" style="width: 30%; padding: 5px;">
 		<form>
 			<label for="fNamn">Förnamn</label>
 				<input type="text" id="fNamn" name="förnamn" placeholder="Ditt förnamn"><br>
@@ -163,10 +163,10 @@
 				<input type="tel" id="telefon" name="telefon" placeholder="Ditt telefonnummer"><br>
 			<div class="formdag">
 				<div>
-					<input type="radio" name="bokningsRadio" id="visaFormDag">
 					<label for="visaFormDag">Boka individuella dagar</label>
-					<input type="radio" name="bokningsRadio" id="bokaAllt">
+					<input type="radio" name="bokningsRadio" id="visaFormDag">
 					<label for="bokaAllt">Boka samtliga dagar</label>
+					<input type="radio" name="bokningsRadio" id="bokaAllt">
 					<div id="doldaDagar">
 						<label for="Dagval">Vilka dagar du vill boka</label><br>
 						<div class="checkbox">
@@ -189,14 +189,18 @@
 				</div>
 			</div>
 			<br>
-			<label for="lunch">Önskad lunch</label>
+			<div>
+				<label for="lunch">Önskad lunch</label>
 				<select name="lunch" id="lunch">
 					<option value="kott">kött</option>
 					<option value="fisk">Fisk</option>
 					<option value="vegetarisk">vegetarisk</option>
 					<option value="vegan">vegan</option>
 				</select><br>
-			<button class="knapp"> Skicka in</button>
+			</div>
+				<div class="skickaIn">
+							<button class="knapp"> Skicka in</button>
+				</div>
 		</form>
 	</div>
 
