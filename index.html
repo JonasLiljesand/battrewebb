@@ -11,14 +11,14 @@
 </head>
 <body class="background">
 <div class="gridlayout">
-	<h1>
+	<h1 id="Titel">
 		titel
 	</h1>
 	<div class="knappgrid boxxy">
 			<a href="#event1" class="knapp">knapp1</a>
 			<a href="#event2" class="knapp">knapp2</a>
 			<a href="#event3" class="knapp">knapp3</a>
-			<a href="#allaevent" class="knapp" onclick="document.querySelector('.gridlayout').classList.add('hide-row')">Till anmälan</a>
+			<a href="#formular" class="knapp">Till anmälan</a>
 	</div>
 	<div class="dagboxEventholder boxxy">
 		<div class="dagbox" id="event1">
@@ -98,7 +98,7 @@
 			</div>
 		</div>
 	</div>
-	<div class="formular boxxy" style="width: 30%;">
+	<div class="formular boxxy" id="formular" style="width: 30%;">
 		<form>
 			<label for="fNamn">Förnamn</label>
 				<input type="text" id="fNamn" name="förnamn" placeholder="Ditt förnamn"><br>
@@ -154,6 +154,9 @@
 	</div>
 
 </div>
+</div>
+<div>
+	<a href="#Titel" class="knapp takeMeBack">  Tillbaka till toppen  </a>
 </div>
 </body>
 </html>
