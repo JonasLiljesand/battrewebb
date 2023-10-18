@@ -8,19 +8,27 @@
 <link rel="stylesheet" href="styles.css/dagbox.css">
 <link rel="stylesheet" href="styles.css/gridlayout.css">
 <link rel="stylesheet" href="styles.css/form.css">
+<link rel="stylesheet" href="styles.css/headerfooter.css">
 </head>
-<body class="background">
-<div class="gridlayout">
+<header  class="gridlayout headerfooter header">
 	<h1 id="Titel">
 		Bättre Webb
 	</h1>
+</header>
+<body class="background">
+<div class="gridlayout">
+
 	<div class="knappgrid boxxy">
+		<h2 class="h2">Meny</h2>
+			<div>
 			<a href="#event1" class="knapp">Fredag</a>
 			<a href="#event2" class="knapp">Lördag</a>
 			<a href="#event3" class="knapp">Söndag</a>
 			<a href="#formular" class="knapp">Till anmälan</a>
+			</div>
 	</div>
 	<div class="dagboxEventholder boxxy">
+		<h2 class="h2">Helgens Seminarier och Event</h2>
 		<div class="dagbox" id="event1">
 			<div class="eventbox">
 				<div class="bild">
@@ -145,61 +153,64 @@
 			</div>
 		</div>
 	</div>
-	<div class="formular boxxy" id="formular" style="width: 30%; padding: 5px;">
+	<div class="formular boxxy" id="formular">
+		<h2>Anmälningsformulär</h2>
+		<br>
 		<form>
-			<label for="fNamn">Förnamn</label>
+			<div class="formularFalt">
+				<label for="fNamn">Förnamn</label>
 				<input type="text" id="fNamn" name="förnamn" placeholder="Ditt förnamn"><br>
-			<label for="eNamn">Efternamn</label>
+				<label for="eNamn">Efternamn</label>
 				<input type="text" id="eNamn" name="Efternamn" placeholder="Ditt efternamn"><br>
-			<label for="epost">Epostadress</label>
+				<label for="epost">Epostadress</label>
 				<input type="email" id="epost" name="epostadress" placeholder="Din Epostadress"><br>
-			<label for="adress">Adress</label>
+				<label for="adress">Adress</label>
 				<input type="text" id="adress" name="adress" placeholder="Din adress"><br>
-			<label for="postkod">Postkod</label>
+				<label for="postkod">Postkod</label>
 				<input type="string" id="postkod" name="postkod" placeholder="Din postkod"><br>
-			<label for="stad">Stad</label>
+				<label for="stad">Stad</label>
 				<input type="text" id="stad" name="stad" placeholder="Din hemort"><br>
-			<label for="telefon">Telefon</label>
+				<label for="telefon">Telefon</label>
 				<input type="tel" id="telefon" name="telefon" placeholder="Ditt telefonnummer"><br>
+
+				<div style="margin-top: 5px;">
+					<label for="lunch">Önskad lunch</label>
+					<select name="lunch" id="lunch">
+						<option value="kott">Kött</option>
+						<option value="fisk">Fisk</option>
+						<option value="vegetarisk">Vegetarisk</option>
+						<option value="vegan">Veganskt</option>
+					</select><br>
+				</div>
+			</div>
 			<div class="formdag">
 				<div>
 					<label for="visaFormDag">Boka individuella dagar</label>
 					<input type="radio" name="bokningsRadio" id="visaFormDag">
-					<label for="bokaAllt">Boka samtliga dagar</label>
-					<input type="radio" name="bokningsRadio" id="bokaAllt">
+					<label for="bokaAllt">Boka samtliga dagar: 15 000 kr</label>
+					<input   type="radio" name="bokningsRadio" id="bokaAllt">
 					<div id="doldaDagar">
 						<label for="Dagval">Vilka dagar du vill boka</label><br>
 						<div class="checkbox">
 							<input type="checkbox" id="2010fredag" name="fredag">
-							<label for="2010fredag">Fredagen 20e oktober</label>
+							<label for="2010fredag">Fredagen 20e oktober: 5 500 kr</label>
 						</div>
 						<div class="checkbox">
 							<input type="checkbox" id="2110lordag" name="lordag">
-							<label for="2110lordag">Lördagen 21e oktober</label>
+							<label for="2110lordag">Lördagen 21e oktober: 5 500 kr</label>
 						</div>
 						<div class="checkbox">
 							<input type="checkbox" id="2210sondag" name="sondag">
-							<label for="2210sondag">Söndagen 22e oktober</label>
+							<label for="2210sondag">Söndagen 22e oktober 5 500 kr</label>
 						</div>
-						<div>
-							<input type="checkbox" id="alladagar" name="alladagar">
-							<label for="alladagar">Hela helgen 20-22e oktober</label>
-						</div>
+
 					</div>
 				</div>
 			</div>
 			<br>
-			<div>
-				<label for="lunch">Önskad lunch</label>
-				<select name="lunch" id="lunch">
-					<option value="kott">kött</option>
-					<option value="fisk">Fisk</option>
-					<option value="vegetarisk">vegetarisk</option>
-					<option value="vegan">vegan</option>
-				</select><br>
-			</div>
+
 				<div class="skickaIn">
-							<button class="knapp"> Skicka in</button>
+							<button class="knapp"> Anmäl</button>
 				</div>
 		</form>
 	</div>
@@ -210,4 +221,9 @@
 	<a href="#Titel" class="knapp takeMeBack">  Tillbaka till toppen  </a>
 </div>
 </body>
+<footer class="headerfooter footer">
+	<p >Bättreweb LLC ©</p>
+	<!--Exmepelmejl-->
+	<p><a href="mejlGoesHere">battreweb@hotmail.com</a></p>
+</footer>
 </html>

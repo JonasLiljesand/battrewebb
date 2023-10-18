@@ -5,23 +5,49 @@
 	grid-row-start: 4;
 	grid-row-end: span 1;
 	text-align: left;
+	width: 45%;
+	padding: 5px;
 
 }
+
+.formularFalt input, select {
+	width: 80%;
+	border-radius: 5px;
+	height: 30px;
+	font-size: large;
+}
+
+
 /*layout av formulärsfrågor*/
-label {
+.formular label {
 	display: block;
 }
-.checkbox {
 
-}
 /*layouten för checkboxar i formulär*/
 .formdag {
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
+	margin-top: 10px;
+	background-color: rgba(196, 233, 233, 0.877);
+	padding: 5px;
+	border-radius: 5px;
+	width: 80%;
+}
+
+.formdag input {
+	height: 20px
+
+}
+.checkbox {
+	display: flex;
+	align-items: right;
+}
+.checkbox input{
+	margin-right: 10px;
 }
 /*Döljer valet av individuella dagar som default*/
-#doldaDagar {
+/*#doldaDagar {
 	display: none;
 }
 /*visar valet av indivulla dagar*/

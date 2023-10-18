@@ -1,26 +1,40 @@
-.background {
-	background-image: linear-gradient( rgb(217, 129, 22), rgb(235, 224, 224));
-}
+/*Nollställer webbläsarens grundisntällningar*/
+  * {
+  	margin: 0;
+  	padding: 0;
+  }
 
+/*Bakgrundsfärg*/
+.background {
+	background-image: linear-gradient( rgba(122, 171, 241, 0.849), rgb(235, 224, 224));
+	background-attachment: fixed;
+}
+/*Övergrippande inställningar för htmln*/
 html {
 	scroll-behavior: smooth;
 	font-family: Roboto, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
-body {
-	background-attachment: fixed;
-
-}
+/*Boxxy gör boxes*/
 .boxxy {
-	border: 3px solid rgb(137, 130, 130) ;
-	border-radius: 4px;
-	background-color: blueviolet;
-
+	border: 3px solid rgb(255, 255, 255) ;
+	border-radius: 0.3em;
+	background-color: rgba(14, 138, 27, 0.616);
 }
 
+/*Titel*/
 h1 {
-	color:rgb(22, 244, 244);
-	text-shadow:-2px 0 black, 0 1px black;
+	color:rgb(12, 15, 15);
+	text-shadow:-2px 0 rgb(227, 216, 216), 0 1px rgb(255, 255, 255);
 	grid-column-start: 2;
 	margin: 0px 0px 0px 0px;
+	font-size: 3em;
 }
+
+h2 {
+	color: rgb(12, 15, 15);
+		text-shadow: 1px 0 rgba(163, 160, 160, 0.696), 0 1px rgb(168, 166, 166);
+	text-align: left;
+}
+
+/*byta namn på denna CSS? Har blivit en mer generalist CSS, alternativt bryta upp den i flera*/

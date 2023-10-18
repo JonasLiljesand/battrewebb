@@ -18,10 +18,10 @@
 	box-sizing: border-box;
 	width: 700px;
 	height: 125px;
-	background-color: aqua;
+	background-color: #00bf7d;
 	margin: 0.5em;
-	border: 3px solid black;
-	border-radius: 4px;
+
+	border-radius: 5px;
 	/*padding: 1em 1em 0;*/
 	display:flex;
 	align-items: center;

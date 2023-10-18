@@ -1,12 +1,13 @@
 .knapp {
 	padding: 1em 2em;
-	background-color: rgb(244, 214, 178);
+	background-color: rgb(255, 255, 255);
 	color: black;
 	margin: 0.5em;
 	border-style: outset;
-	border-color: aquamarine;
+	border-color: rgb(255, 255, 255);
 	border-radius: 4px;
 	text-decoration: none;
+	font-size: 1em;
 }
 
 .knapp:hover {
@@ -25,6 +26,7 @@
 }
 
 .skickaIn {
+	text-align: center;
 	
 }
 
