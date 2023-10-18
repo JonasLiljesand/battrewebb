@@ -1,15 +1,16 @@
-/*.dagbox {
+.dagbox {
 	display:none;
 	text-align: center:
 }
 /*visar den valda dagen*/
 .dagbox:target {
 	display: block;
+	
 }
 .dagboxEventholder {
 	text-align: center;
 	padding: 1em;
-	width: 715px;
+	width: 44.5em;
 	grid-row-start: 3;
 	grid-column-start: 2;
 
@@ -17,7 +18,7 @@
 }
 .eventbox {
 	box-sizing: border-box;
-	width: 700px;
+	width: 43em;
 	height: 125px;
 	background-color: #00bf7d;
 	margin: 1em;
@@ -25,6 +26,7 @@
 	/*padding: 1em 1em 0;*/
 	display:flex;
 	align-items: center;
+	text-align: left;
 	overflow: hidden;
 	transition: 3s;
 
@@ -32,6 +34,10 @@
 .eventbox:hover {
 	transform: scale(1.2);
 	box-shadow: 20px 20px 10px rgba(73, 73, 73, 0.36);
+
+}
+
+.eventbox h4 {
 
 }
 
@@ -48,6 +54,7 @@
 
 .infoText {
 	flex: 2;
+	padding: 0.3em;
 
 }
 

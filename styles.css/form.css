@@ -50,7 +50,7 @@
 	margin-right: 10px;
 }
 /*Döljer valet av individuella dagar som default*/
-/*#doldaDagar {
+.doldaDagar {
 	display: none;
 }
 /*visar valet av indivulla dagar*/
