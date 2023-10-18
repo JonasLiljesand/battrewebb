@@ -20,14 +20,14 @@
 	grid-row-start: 2;
 	padding: 1em;
 	display: flex;
-	justify-content: left;
 	align-items: center;
 	height: 100px;
+
 }
 
 .skickaIn {
 	text-align: center;
-	
+
 }
 
 .takeMeBack {

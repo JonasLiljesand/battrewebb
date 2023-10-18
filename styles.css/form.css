@@ -8,6 +8,7 @@
 	width: 45%;
 	padding: 5px;
 
+
 }
 
 .formularFalt input, select {
@@ -21,6 +22,8 @@
 /*layout av formulärsfrågor*/
 .formular label {
 	display: block;
+	align-items: center
+	;
 }
 
 /*layouten för checkboxar i formulär*/

@@ -20,6 +20,9 @@ html {
 	border: 3px solid rgb(255, 255, 255) ;
 	border-radius: 0.3em;
 	background-color: rgba(14, 138, 27, 0.616);
+	display: flex;
+	flex-direction: column;
+	flex-grow: ;
 }
 
 /*Titel*/
@@ -32,9 +35,13 @@ h1 {
 }
 
 h2 {
+	align-self: flex-start;
 	color: rgb(12, 15, 15);
 		text-shadow: 1px 0 rgba(163, 160, 160, 0.696), 0 1px rgb(168, 166, 166);
 	text-align: left;
+	background-image: linear-gradient(to left, rgba(255, 0, 0, 0), rgb(14, 203, 87));
+	border-radius: 5px;
+
 }
 
 /*byta namn på denna CSS? Har blivit en mer generalist CSS, alternativt bryta upp den i flera*/

@@ -13,20 +13,28 @@
 	grid-row-start: 3;
 	grid-column-start: 2;
 
+
 }
 .eventbox {
 	box-sizing: border-box;
 	width: 700px;
 	height: 125px;
 	background-color: #00bf7d;
-	margin: 0.5em;
-
+	margin: 1em;
 	border-radius: 5px;
 	/*padding: 1em 1em 0;*/
 	display:flex;
 	align-items: center;
 	overflow: hidden;
+	transition: 3s;
+
 }
+.eventbox:hover {
+	transform: scale(1.2);
+	box-shadow: 20px 20px 10px rgba(73, 73, 73, 0.36);
+
+}
+
 .bild {
 	flex: 1;
 
