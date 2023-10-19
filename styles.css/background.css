@@ -10,7 +10,7 @@
 	background-attachment: fixed;
 
 }
-/*Övergrippande inställningar för htmln*/
+/*Övergrippande inställningar för html, scrollbeteende och font + alternativa fonts*/
 html {
 	scroll-behavior: smooth;
 	font-family: Roboto, 'Open Sans', 'Helvetica Neue', sans-serif;
@@ -25,9 +25,8 @@ html {
 	flex-direction: column;
 	max-width: 50em;
 	padding: 1em;
+	grid-column-start: 2;
 }
-
-
 
 h2 {
 	align-self: flex-start;
@@ -36,7 +35,6 @@ h2 {
 	text-align: left;
 	background-image: linear-gradient(to left, rgba(255, 0, 0, 0), rgb(14, 203, 87));
 	border-radius: 5px;
-
 }
 
 /*byta namn på denna CSS? Har blivit en mer generalist CSS, alternativt bryta upp den i flera*/

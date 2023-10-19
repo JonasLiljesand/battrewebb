@@ -12,7 +12,6 @@
 	padding: 1em 2em;
 	/*width: 44.5em;*/
 	grid-row-start: 3;
-	grid-column-start: 2;
 	margin-top: 1em;
 
 
@@ -20,7 +19,7 @@
 .eventbox {
 	box-sizing: border-box;
 	/*width: 43em;*/
-	height: 125px;
+	max-height: 7em;
 	background-color: #00bf7d;
 	margin: 1em;
 	border-radius: 5px;
@@ -36,7 +35,6 @@
 .eventbox:hover {
 	transform: scale(1.2);
 	box-shadow: 20px 20px 10px rgba(73, 73, 73, 0.36);
-
 }
 
 .eventbox h4 {
@@ -45,13 +43,18 @@
 
 .bild {
 	flex: 1;
-
 }
 
 .bild img {
-	width: 100%;
-	height: 100%;
+	/*width: 100%;
+	height: 100%;*/
 	object-fit: cover;
+}
+
+@media screen and (max-width: 700px) {
+ 	.bild {
+ 		display: none;
+ 	}
 }
 
 .infoText {
@@ -59,7 +62,6 @@
 	padding: 0.3em;
 
 }
-
 
 #event2,
 #event3 {

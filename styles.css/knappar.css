@@ -8,6 +8,7 @@
 	border-radius: 4px;
 	text-decoration: none;
 	font-size: 1em;
+	margin: 0.5em;
 }
 
 .knapp:hover {
@@ -20,10 +21,22 @@
 	grid-row-start: 2;
 	display: flex;
 	align-items: center;
-	height: 100px;
+	text-align: center;
 
 }
 
+		text-align: center;
+		padding: 1em 2em;
+		/*width: 44.5em;*/
+		grid-row-start: 3;
+		margin-top: 1em;
+
+@media screen and (max-width: 800px) {
+	.knappgrid {
+		flex-direction: column;
+		flex-wrap: wrap;
+	}
+}
 .skickaIn {
 	text-align: center;
 
