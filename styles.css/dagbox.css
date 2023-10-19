@@ -5,20 +5,21 @@
 /*visar den valda dagen*/
 .dagbox:target {
 	display: block;
-	
+
 }
 .dagboxEventholder {
 	text-align: center;
-	padding: 1em;
-	width: 44.5em;
+	padding: 1em 2em;
+	/*width: 44.5em;*/
 	grid-row-start: 3;
 	grid-column-start: 2;
+	margin-top: 1em;
 
 
 }
 .eventbox {
 	box-sizing: border-box;
-	width: 43em;
+	/*width: 43em;*/
 	height: 125px;
 	background-color: #00bf7d;
 	margin: 1em;
@@ -28,7 +29,8 @@
 	align-items: center;
 	text-align: left;
 	overflow: hidden;
-	transition: 3s;
+	transition: all 1.5s;
+	animation: ease-in;
 
 }
 .eventbox:hover {

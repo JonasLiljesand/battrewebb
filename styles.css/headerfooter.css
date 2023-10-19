@@ -1,12 +1,24 @@
 .headerfooter {
+	display: grid;
 	background-color: rgba(14, 138, 27, 0.616);
 	box-shadow: 5px 4px 5px 4px rgb(5, 90, 26);
-	width: 100%;
+
 
 }
 
 .header {
 	margin-bottom: 1em;
+	min-height: 200px;
+	align-items: center;
+}
+
+/*Titel*/
+.header h1 {
+	color: rgb(12, 15, 15);
+	text-shadow: -2px 0 rgb(227, 216, 216), 0 1px rgb(255, 255, 255);
+	grid-column-start: 2;
+	margin: 0px 0px 0px 0px;
+	font-size: clamp(1rem, 5rem);
 }
 
 .footer {

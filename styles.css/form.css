@@ -57,3 +57,14 @@
 #visaFormDag:checked + #doldaDagar {
 	display: block;
 }
+/*Godkänn input i form*/
+.formular input:valid {
+	border-color: rgb(15, 236, 15);
+	background-color: rgb(168, 246, 168);
+}
+
+/*Godkänn ej input i form*/
+/*.formular input:invalid {
+	border-color: red;
+	background-color: rgb(246, 148, 148);
+}*/
