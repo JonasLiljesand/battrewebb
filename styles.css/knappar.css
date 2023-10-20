@@ -21,24 +21,13 @@
 	grid-row-start: 2;
 	display: flex;
 	align-items: center;
-	text-align: center;
-
 }
 
-		text-align: center;
-		padding: 1em 2em;
-		/*width: 44.5em;*/
-		grid-row-start: 3;
-		margin-top: 1em;
 
-@media screen and (max-width: 800px) {
-	.knappgrid {
-		flex-direction: column;
-		flex-wrap: wrap;
-	}
-}
+
 .skickaIn {
 	text-align: center;
+	
 
 }
 

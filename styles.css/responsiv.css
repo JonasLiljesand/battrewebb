@@ -1,0 +1,30 @@
+@media only screen and (max-width: 700px) {
+	.gridlayout {
+			display: grid;
+			grid-template-columns: auto ;
+	}
+
+	.bild {
+		display: none;
+	}
+
+	.boxxy {
+			width: auto;
+			grid-column-start: auto;
+			padding: 0em;
+	}
+
+	.knappgrid {
+		flex-direction: column;
+		flex-wrap: wrap;
+	}
+	.eventbox {
+		transform: scale(0.99);
+	}
+
+	.header h1 {
+		font-size: 14.5vw;
+	}
+
+}
+

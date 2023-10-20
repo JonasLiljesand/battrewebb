@@ -1,4 +1,4 @@
-/*Nollställer webbläsarens grundisntällningar*/
+
 * {
   	margin: 0;
   	padding: 0;
@@ -23,10 +23,16 @@ html {
 	background-color: rgba(14, 138, 27, 0.616);
 	display: flex;
 	flex-direction: column;
-	max-width: 50em;
 	padding: 1em;
 	grid-column-start: 2;
 }
+
+/*@media screen and (max-width: 800px) {
+	.boxxy {
+		width: 90%;
+	}
+
+}*/
 
 h2 {
 	align-self: flex-start;
@@ -36,5 +42,3 @@ h2 {
 	background-image: linear-gradient(to left, rgba(255, 0, 0, 0), rgb(14, 203, 87));
 	border-radius: 5px;
 }
-
-/*byta namn på denna CSS? Har blivit en mer generalist CSS, alternativt bryta upp den i flera*/

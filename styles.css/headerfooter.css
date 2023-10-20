@@ -9,8 +9,8 @@
 .header {
 	margin-bottom: 1em;
 	min-height: 200px;
-	align-items: center;
-	
+	text-align: center;
+
 }
 
 /*Titel*/
@@ -19,7 +19,7 @@
 	text-shadow: -2px 0 rgb(227, 216, 216), 0 1px rgb(255, 255, 255);
 	grid-column-start: 2;
 	margin: 0px 0px 0px 0px;
-	font-size: clamp(1rem, 5rem);
+	font-size:6em;
 }
 
 .footer {

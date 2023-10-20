@@ -1,14 +1,15 @@
 /*gridposition för formulär*/
 .formular {
-
-	grid-column-end: span 2;
 	grid-row-start: 4;
-	grid-row-end: span 1;
 	text-align: left;
 	width: 45%;
 	padding: 5px;
+	;
 
+}
 
+.formularFalt {
+	margin: 1.5em;
 }
 
 .formularFalt input, select {
@@ -33,7 +34,8 @@
 	justify-content: space-between;
 	margin-top: 10px;
 	background-color: rgba(196, 233, 233, 0.877);
-	padding: 5px;
+	padding: 0.5em;
+	margin: 0.5em 1.5em 0.5em 1.5em;
 	border-radius: 5px;
 	width: 80%;
 }
@@ -56,6 +58,11 @@
 /*visar valet av indivulla dagar*/
 #visaFormDag:checked + #doldaDagar {
 	display: block;
+}
+
+.formular input:empty {
+	border-color: black;
+	background-color: white;
 }
 /*Godkänn input i form*/
 .formular input:valid {

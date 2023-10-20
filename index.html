@@ -13,30 +13,20 @@
 <link rel="stylesheet" href="styles.css/responsiv.css">
 
 </head>
-<header  class="gridlayout headerfooter header">
+<header class="gridlayout headerfooter header">
 	<h1 id="Titel">
 		Bättre Webb
 	</h1>
 	<br>
 	<div class="knappgrid">
-		<a href="#event1" class="knapp">Fredag</a>
-		<a href="#formul	ar" class="knapp">Till Anmälan</a>
+		<a href="#event1" class="knapp">Schema</a>
+		<a href="#formular" class="knapp">Till Anmälan</a>
 	</div>
 </header>
 <body class="background">
-<div class="gridlayout">
-	<!--<div class="boxxy knappgrid">
-		<h2 class="h2">Meny</h2>
-		<br>
-			<div>
-			<a href="#event1" class="knapp">Fredag</a>
-			<a href="#event2" class="knapp">Lördag</a>
-			<a href="#event3" class="knapp">Söndag</a>
-			<a href="#formular" class="knapp">Till Anmälan</a>
-			</div>
-	</div>-->
+<div class="gridlayout" width="auto">
 	<div class="dagboxEventholder boxxy">
-		<h2 class="h2">Helgens Seminarier och Event</h2>
+		<h2 class="h2">Seminarieschema</h2>
 			<div class="knappgrid" >
 				<a href="#event1" class="knapp">Fredag</a>
 				<a href="#event2" class="knapp">Lördag</a>
@@ -177,15 +167,15 @@
 				<label for="eNamn">Efternamn</label>
 				<input type="text" id="eNamn" name="Efternamn" placeholder="Ditt efternamn" required minlength="2"><br>
 				<label for="epost">Epostadress</label>
-				<input type="email" id="epost" name="epostadress" placeholder="Din Epostadress" required ><br>
+				<input type="email" id="epost" name="epostadress" placeholder="Din epostadress" required ><br>
 				<label for="telefon">Telefon</label>
 				<input type="tel" id="telefon" name="telefon" placeholder="Ditt telefonnummer" required><br>
 				<label for="adress">Adress</label>
-				<input type="text" id="adress" name="adress" placeholder="Din adress"><br>
+				<input type="text" id="adress" name="adress" placeholder="Din adress" minlength="2"><br>
 				<label for="postkod">Postkod</label>
-				<input type="string" id="postkod" name="postkod" placeholder="Din postkod"><br>
+				<input type="string" id="postkod" name="postkod" placeholder="Din postkod" minlength="5"><br>
 				<label for="stad">Stad</label>
-				<input type="text" id="stad" name="stad" placeholder="Din hemort"><br>
+				<input type="text" id="stad" name="stad" placeholder="Din hemort" minlength="2"><br>
 				<div style="margin-top: 5px;">
 					<label for="lunch">Önskad lunch</label>
 					<select name="lunch" id="lunch" required>
@@ -199,12 +189,12 @@
 			</div>
 			<div class="formdag">
 				<div>
-					<label for="visaFormDag">Boka individuella dagar</label>
-					<input type="radio" name="bokningsRadio" id="visaFormDag" required>
 					<label for="bokaAllt">Boka samtliga dagar: 15 000 kr</label>
 					<input   type="radio" name="bokningsRadio" id="bokaAllt" required>
-					<div id="doldaDagar">
-						<label for="Dagval">Vilka dagar du vill boka</label><br>
+					<label for="visaFormDag">Boka individuella dagar</label>
+					<input type="radio" name="bokningsRadio" id="visaFormDag" required>
+					<div class="boxxy" style="background-color: rgba(196, 233, 233, 0.877);" id="doldaDagar">
+						<label style="margin-bottom: 0.5em;" for="Dagval">Ange önskade dagar:</label>
 						<div class="checkbox">
 							<input type="checkbox" id="2010fredag" name="fredag">
 							<label for="2010fredag">Fredagen 20e oktober: 5 500 kr</label>
@@ -223,8 +213,8 @@
 			</div>
 			<br>
 
-				<div class="skickaIn">
-							<button class="knapp">Boka</button>
+				<div style="text-align: center;">
+							<input class="skickaIn knapp" knapptype="submit" value="Skicka in">
 				</div>
 		</form>
 	</div>
@@ -237,7 +227,6 @@
 </body>
 <footer class="headerfooter footer">
 	<p >Bättreweb LLC ©</p>
-	<!--Exmepelmejl-->
-	<p><a href="mejlGoesHere">battreweb@hotmail.com</a></p>
+	<p><!--Exmepelmejl--><a href="mejlGoesHere">battreweb@hotmail.com</a></p>
 </footer>
 </html>
