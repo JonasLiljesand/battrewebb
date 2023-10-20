@@ -10,6 +10,7 @@
 	text-decoration: none;
 	font-size: 1em;
 	margin: 0.5em;
+	text-align: center;
 }
 
 .knapp:hover {
@@ -25,12 +26,8 @@
 
 }
 
-
-
 .skickaIn {
 	text-align: center;
-
-
 }
 
 .takeMeBack {

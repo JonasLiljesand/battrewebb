@@ -4,9 +4,7 @@
 	text-align: left;
 	width: 45%;
 	padding: 5px;
-	;
-
-}
+	}
 
 .formularFalt {
 	margin: 1.5em;
@@ -17,6 +15,7 @@
 	border-radius: 5px;
 	height: 30px;
 	font-size: large;
+	margin-bottom: 1.5em;
 }
 
 
@@ -41,20 +40,22 @@
 }
 
 .formdag input {
-	height: 20px
-
+	height: 2em;
 }
+
 .checkbox {
 	display: flex;
 	align-items: right;
 }
+
 .checkbox input{
 	margin-right: 10px;
 }
 /*Döljer valet av individuella dagar som default*/
-.doldaDagar {
+#doldaDagar {
 	display: none;
 }
+
 /*visar valet av indivulla dagar*/
 #visaFormDag:checked + #doldaDagar {
 	display: block;
@@ -70,14 +71,13 @@
 	background-color: rgb(168, 246, 168);
 }
 
-/*Godkänn ej input i form*/
-/*.formular input:invalid {
-	border-color: red;
-	background-color: rgb(246, 148, 148);
-}*/
 
 @media screen and (max-width: 800px) {
 	.boxxy {
 		width: auto;
 	}
+}
+
+#visaFormDag:checked~#doldaDagar {
+	display: block;
 }
