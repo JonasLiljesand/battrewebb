@@ -10,7 +10,6 @@
 .dagboxEventholder {
 	text-align: center;
 	padding: 1em 2em;
-	/*width: 44.5em;*/
 	grid-row-start: 3;
 	margin-top: 1em;
 	max-width: 50em;
@@ -19,12 +18,10 @@
 }
 .eventbox {
 	box-sizing: border-box;
-
 	max-height: 7em;
-	background-color: #00bf7d;
+	background-color: rgba(196, 233, 233, 0.877);
 	margin: 1em;
 	border-radius: 5px;
-
 	display:flex;
 	align-items: center;
 	text-align: left;
@@ -32,6 +29,7 @@
 }
 .eventinfo {
 	font-size: 1.2em;
+	align-items: center;
 }
 
 .eventinfo li, P{
@@ -45,8 +43,6 @@
 }
 
 .bild img {
-	/*width: 100%;
-	height: 100%;*/
 	object-fit: cover;
 }
 
