@@ -19,7 +19,8 @@
 		flex-wrap: wrap;
 	}
 	.eventbox {
-		transform: scale(0.99);
+		max-height: 20em;
+
 	}
 
 	.header h1 {
@@ -28,3 +29,15 @@
 
 }
 
+@media only screen and (min-width: 700px) {
+		.eventbox {
+		transition: all 1.5s;
+		animation: ease-in;
+
+		}
+
+		.eventbox:hover {
+			transform: scale(1.2);
+			box-shadow: 20px 20px 10px rgba(73, 73, 73, 0.36);
+		}
+}

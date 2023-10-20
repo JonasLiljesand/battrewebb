@@ -29,18 +29,20 @@
 	align-items: center;
 	text-align: left;
 	overflow: hidden;
-	transition: all 1.5s;
+	/*transition: all 1.5s;
 	animation: ease-in;
 
 }
 .eventbox:hover {
 	transform: scale(1.2);
-	box-shadow: 20px 20px 10px rgba(73, 73, 73, 0.36);
+	box-shadow: 20px 20px 10px rgba(73, 73, 73, 0.36);*/
+	
 }
 
 .eventbox h4 {
 
 }
+
 
 .bild {
 	flex: 1;

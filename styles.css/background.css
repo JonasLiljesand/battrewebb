@@ -27,12 +27,7 @@ html {
 	grid-column-start: 2;
 }
 
-/*@media screen and (max-width: 800px) {
-	.boxxy {
-		width: 90%;
-	}
 
-}*/
 
 h2 {
 	align-self: flex-start;
