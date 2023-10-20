@@ -19,24 +19,16 @@
 }
 .eventbox {
 	box-sizing: border-box;
-	/*width: 43em;*/
+
 	max-height: 7em;
 	background-color: #00bf7d;
 	margin: 1em;
 	border-radius: 5px;
-	/*padding: 1em 1em 0;*/
+
 	display:flex;
 	align-items: center;
 	text-align: left;
 	overflow: hidden;
-	/*transition: all 1.5s;
-	animation: ease-in;
-
-}
-.eventbox:hover {
-	transform: scale(1.2);
-	box-shadow: 20px 20px 10px rgba(73, 73, 73, 0.36);*/
-
 }
 .eventinfo {
 	font-size: 1.2em;
