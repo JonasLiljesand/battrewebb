@@ -32,9 +32,11 @@
 	align-items: center;
 }
 
+.eventinfo p {
+	
+}
 .eventinfo li, P{
 	margin: 0.5em;
-
 }
 
 
